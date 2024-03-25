@@ -15,9 +15,11 @@ L'output del prezzo finale va messo fuori in forma umana (con massimo due decima
     - [x] Ask the user, via prompt, for the passenger's age.
 
 2. LOGICAL EXECUTION
-    - [ ] Calculate the entire price of the ticket without any discount.
-    - [ ] Calculate and apply 20% discount if user under 18yo
-    - [ ] Calculate and apply 40% discount if user over 65yo
+    - [x] Calculate the entire price of the ticket without any discount.
+    - [x] Calculate and apply 20% discount if user under 18yo
+    - [x] Calculate and apply 40% discount if user over 65yo
+    - [x] Launch Alert if younger than 12yo
+    - [x] Approximate final price if needed
 
 3. OUTPUT
-    - [ ] Print the right price for each age class with only two decimal numbers
+    - [x] Print the right price for each age class with only two decimal numbers

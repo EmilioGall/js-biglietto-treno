@@ -13,21 +13,32 @@ const userAge = prompt("Thank you. Now, please insert your age."); // String
 console.log(userAge, typeof userAge); // ShowInConsole AgeInput
 
 
-// ENTIRE PRICE GENERATOR
+// CALCULATIONS
+
+// Entire price calculator
 
 let generatedPrice = userKm * 0.21; // Number
 
 console.log(generatedPrice, typeof generatedPrice); // ShowInConsole generatedPrice
 
-// DISCOUNTS CALCULATOR
+// Discounts calculator
 
-if (userAge < 18) {
-    finalPrice = generatedPrice * (20/100 * generatedPrice)
-} else if (userAge > 65) {
-    finalPrice = generatedPrice * (20/100 * generatedPrice)
+if ((userAge < 18) && (userAge > 12)) { // Boolean
+    finalPrice = generatedPrice * (20/100 * generatedPrice) // Number
+} else if (userAge > 65) { // Boolean
+    finalPrice = generatedPrice * (20/100 * generatedPrice) // Number
+} else if (userAge < 12) { // Boolean
+    alert("You are too young to purchase a ticket, please ask your parents for support.") // String
+    document.getElementById("price").innerHTML = ("Not allowed");
 } else {
-    finalPrice = generatedPrice
-}
+    finalPrice = generatedPrice // Number
+};
+
+console.log(finalPrice, typeof finalPrice); // ShowInConsole finalPrice
+
+// Price approximation
+
+let finalPrice = finalPrice.toFixed(2);
 
 console.log(finalPrice, typeof finalPrice); // ShowInConsole finalPrice
 
