@@ -2,13 +2,17 @@
 
 // Km Input
 
-const userKm = prompt("Hello, please insert the number of Km you desire to travel."); // String
+let userKm = prompt("Hello, please insert the number of Km you desire to travel."); // String
+
+userKm = parseInt(userKm); // number
 
 console.log(userKm, typeof userKm); // ShowInConsole KmInput
 
 // Age Input
 
-const userAge = prompt("Thank you. Now, please insert your age."); // String
+let userAge = prompt("Thank you. Now, please insert your age."); // String
+
+userAge = parseInt(userAge); // number
 
 console.log(userAge, typeof userAge); // ShowInConsole AgeInput
 
