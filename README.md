@@ -11,19 +11,19 @@ ___
 
 ## Solution 
 
-### Logical Process
+### INPUT
 
-#### INPUT
-    - [x] Ask the user, via prompt, for the number of Km he or she wants to travel.
-    - [x] Ask the user, via prompt, for the passenger's age.
+   - [x] Ask the user, via prompt, for the number of Km he or she wants to travel.
+   - [x] Ask the user, via prompt, for the passenger's age.
 
-#### LOGICAL EXECUTION
-IF inserted Km is *number* AND inserted Age is *number*.
+### LOGICAL EXECUTION
+
+- **IF** inserted Km is *number* AND inserted Age is *number*.
    - [x] Calculate the entire price of the ticket without any discount.
        ```
        (Number of Km * 0.21)
        ```
-   - [ ] Define discount for each age category.
+   - [x] Define discount for each age category.
        ```
        IF insert age is under 18
            Define discount at 20.
@@ -39,9 +39,10 @@ IF inserted Km is *number* AND inserted Age is *number*.
        (Entire price - (entire price * discount/100))
        ```
    
-   #### OUTPUT
+   ### OUTPUT
+
    - [ ] Approximate final price.
    - [ ] Print the right price with only two decimal numbers
-
-ELSE
+_
+- **ELSE**
    - [ ] Data Error
