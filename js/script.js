@@ -42,11 +42,11 @@ console.log(finalPrice, typeof finalPrice); // ShowInConsole finalPrice
 
 // Price approximation
 
-let finalPrice = finalPrice.toFixed(2);
+let lastPrice = finalPrice.toFixed(2);
 
-console.log(finalPrice, typeof finalPrice); // ShowInConsole finalPrice
+console.log(lastPrice, typeof lastPrice); // ShowInConsole finalPrice
 
 
 // PRICE OUTPUT
 
-document.getElementById("price").innerHTML = finalPrice;
+document.getElementById("price").innerHTML = lastPrice;
