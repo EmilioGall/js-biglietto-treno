@@ -28,9 +28,9 @@ console.log(generatedPrice, typeof generatedPrice); // ShowInConsole generatedPr
 // Discounts calculator
 
 if ((userAge < 18) && (userAge > 12)) { // Boolean
-    finalPrice = generatedPrice * (20/100 * generatedPrice) // Number
+    finalPrice = generatedPrice - (20/100 * generatedPrice) // Number
 } else if (userAge > 65) { // Boolean
-    finalPrice = generatedPrice * (20/100 * generatedPrice) // Number
+    finalPrice = generatedPrice - (20/100 * generatedPrice) // Number
 } else if (userAge < 12) { // Boolean
     alert("You are too young to purchase a ticket, please ask your parents for support.") // String
     document.getElementById("price").innerHTML = ("Not allowed");
